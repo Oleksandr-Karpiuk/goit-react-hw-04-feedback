@@ -1,0 +1,32 @@
+.feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.feedback__button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100px;
+
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+
+  background: var(--bcg-color);
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+}
+
+.feedback__button:hover,
+.feedback__button:focus {
+  background-color: #188ae860;
+}
