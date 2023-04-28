@@ -1,4 +1,4 @@
-.section {
+.app {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -12,18 +12,4 @@
   border-radius: 5px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.main__title {
-  text-align: center;
-  font-size: 28px;
-  letter-spacing: 0.06em;
-  color: var(--main-text-color);
-}
-
-.notification {
-  text-align: center;
-  font-size: 24px;
-  letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
 }

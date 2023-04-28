@@ -1,0 +1,8 @@
+.notification {
+  margin-top: 15px;
+
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
