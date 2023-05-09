@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import css from './App.module.css';
 import FeedbackOptions from 'components/FeedbackOptions';
 import Statistics from 'components/Statistics';
@@ -9,6 +9,11 @@ export default function App() {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
+  const [options, setOptions] = useState([]);
+
+  useEffect(() => {
+    setOptions(['good', 'neutral', 'bad']);
+  }, []);
 
   const handleIncrement = option => {
     switch (option) {
@@ -37,10 +42,7 @@ export default function App() {
   return (
     <div className={css.app}>
       <Section title="Please leave your feedback">
-        <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
-          onLeaveFeedback={handleIncrement}
-        />
+        <FeedbackOptions options={options} onLeaveFeedback={handleIncrement} />
       </Section>
       {totalFeedback() ? (
         <Section title="Statistics">
